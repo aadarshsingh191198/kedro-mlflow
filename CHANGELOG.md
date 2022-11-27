@@ -4,6 +4,8 @@
 
 ## [0.11.6] - 2023-01-09
 
+-   :sparkles: Added a `MlflowModelRegistryDataSet`  in `kedro_mlflow.io.models` to enable fetching a mlflow model from the mlflow model registry by its name([#260](https://github.com/Galileo-Galilei/kedro-mlflow/issues/260))
+
 ### Changed
 
 -   :sparkles: `kedro-mlflow` now uses the default configuration (ignoring `mlflow.yml`) if an active run already exists in the process where the pipeline is started, and uses this active run for logging. This enables using ` kedro-mlflow`  with an orchestrator which starts mlflow itself before running kedro (e.g. airflow,  the `mlflow run` command, AzureML...) ([#358](https://github.com/Galileo-Galilei/kedro-mlflow/issues/358))
